@@ -7,5 +7,55 @@
   </head>
   <body>
     <h1>HTML & CSS Sandbox - Datalist</h1>
+
+    <!-- General List Select -->
+    <label for="favlang">Favorite Programming Languages</label>
+    <input list="languages" name="favlang" id="favlang">
+  <!-- datalist id has to match input list which is languages in this case -->
+    <datalist id="languages">
+      <option value="JavaScript"></option>
+      <option value="CSS"></option>
+      <option value="HTML"></option>
+      <option value="PHP"></option>
+      <option value="C"></option>
+    </datalist>
+    <br><br>
+    <!-- Time -->
+     <input type="time" list="popularhours">
+     <datalist id="popularhours">
+      <option value="10:00"></option>
+      <option value="11:00"></option>
+      <option value="12:00"></option>
+     </datalist>
+     <br><br>
+
+
+     <label for="tick">Tip Amount</label>
+     <input type="range" name="tick" id="tick"
+     min="0" max="100" list="tickmarks">
+     <datalist id="tickmarks">
+      <option value="0"></option>
+      <option value="10"></option>
+      <option value="20"></option>
+      <option value="30"></option>
+      <option value="40"></option>
+      <option value="50"></option>
+      <option value="60"></option>
+      <option value="70"></option>
+      <option value="80"></option>
+      <option value="90"></option>
+      <option value="100"></option>
+     </datalist>
+     <br><br>
+
+     <!-- Colors -->
+      <label for="color">Pick a color</label>
+      <input type="color" name="color" id="color"
+      list="colorpick">
+      <datalist id="colorpick">
+        <option value="#80000"></option>
+        <option value="#8B000"></option>
+        <option value="#A524A"></option>
+      </datalist>
   </body>
 </html>

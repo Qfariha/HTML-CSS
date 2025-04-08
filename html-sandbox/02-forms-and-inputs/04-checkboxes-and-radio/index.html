@@ -6,6 +6,35 @@
     <title>HTML & CSS Sandbox</title>
   </head>
   <body>
-    <h1>HTML & CSS Sandbox - Checkboxes & Radio</h1>
+    <h1>Checkbox Input</h1>
+    <h2>Favorite Programming Languages</h2>
+    <form>
+      <!-- 	
+  - `name` = what the server uses to **identify the input**
+	- `id` = used to **link labels** or for **JavaScript/CSS**
+  - `value` = what gets submitted if the checkbox is checked -->
+      <label for="html">
+      <input type="checkbox" name="Languages" id="html" checked>
+      HTML</label>
+      <label for="css">
+      <input type="checkbox" name="Languages" id="css">
+      CSS</label>
+      <label for="js">
+      <input type="checkbox" name="Languages" id="js" disabled>
+      JavaScript</label>
+    </form>
+    <h1>Radio Input</h1>
+    <h2>Product Size</h2>
+    <form>
+      <label for="small">
+        <input type="radio" name="size" id="small">
+        Small</label>
+      <label for="medium">
+        <input type="radio" name="size" id="medium">
+        Medium</label>
+      <label for="large">
+        <input type="radio" name="size" id="large" checked>
+        Large</label>
+    </form>
   </body>
 </html>

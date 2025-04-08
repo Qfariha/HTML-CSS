@@ -8,24 +8,30 @@
   <body>
     <h1>HTML & CSS Sandbox - Labels & Text Based Input Attributes</h1>
 
-    <form>
+     <!-- action is where form is being submitted to/endpoint -->
+     <form>
       <div>
         <label for="name">Name</label>
-        <input type="text" id="name" />
+      <!-- id in input connects the label with input if label for=input id -->
+        <input type="text" id="name" placeholder="Enter name"
+        value="John Doe"
+        name="name"
+        required
+        minlength="3"
+        maxlength="10">
       </div>
-      <br />
       <div>
         <label for="email">Email</label>
-        <input type="email" id="email" />
+        <input type="email" id="email" placeholder="Enter email" required >
       </div>
-      <br />
       <div>
         <label for="password">Password</label>
-        <input type="password" id="password" />
+        <input type="password" id="password" placeholder="Enter password" required
+        minlength="6">
       </div>
       <div>
-        <!-- <input type="submit" value="Submit" /> -->
-        <button type="submit">Submit</button>
+        <!-- <input type="submit" value="Submit"> -->
+         <button type="submit">Submit</button>
       </div>
     </form>
   </body>
