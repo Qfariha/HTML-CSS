@@ -4,8 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML & CSS Sandbox</title>
+    <style>
+      meter::-webkit-meter-optimum-value {
+        background-color: violet;
+      }
+    </style>
   </head>
   <body>
     <h1>HTML & CSS Sandbox - Progress & Meter</h1>
+
+    <h2>Progress</h2>
+    <label for="file"> File Progess</label>
+    <progress id="file" max="100" value="75">75%</progress>
+    <br>
+    <h2>Meter</h2>
+    <label for="fuel"> Fuel:</label>
+    <meter id="fuel" min="0" max="100" value="52"
+    low="30" high="90" optimal="80">50/100</meter>
+
+
   </body>
 </html>

@@ -7,6 +7,28 @@
   </head>
   <body>
     <h1>HTML & CSS Sandbox - Image Map</h1>
+    <img src="./computer.jpg" alt="" usemap="#pcmap">
+    <!-- map name should match the usemap -->
+     <map name="pcmap">
+      <!-- top left (x,y)=34,44 and bottom right(x,y)=270,350 
+       href is where we gonna go to by clicking in this area-->
+      <area shape="rect" 
+      coords="34,44,270,350" 
+      href="computer.html" 
+      alt="pc">
+
+      <area shape="rect" 
+      coords="290,172,333,250" 
+      href="phone.html" 
+      alt="phone">
+
+      <!-- middle(x,y)= 337,300 & radius=45 -->
+      <area shape="circle"
+      coords="337,300,45" 
+      href="cup.html" 
+      alt="cup">
+
+     </map>
     </map>
   </body>
 </html>

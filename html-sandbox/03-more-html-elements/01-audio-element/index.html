@@ -7,5 +7,21 @@
   </head>
   <body>
     <h1>HTML & CSS Sandbox - Audio</h1>
+    <!-- Controls must for audio -->
+
+    <!-- <audio src="./song1.mp3" type="audio/mp3" controls loop></audio> -->
+    <!-- <audio src="./song1.mp3" autoplay> -->
+
+    <audio controls>
+    <source src="./song1.mp3" type="audio/mp3">
+    <!-- If source does not work then --> <p>Your browser does not support the audio</p>
+    </audio>
+
+    <h2>Fig and Figcaption</h2>
+    <figure>
+      <figcaption>Listen to this song</figcaption>
+      <audio src="./song1.mp3" controls></audio>
+      <a href="./song1.mp3"> Download Audio</a>
+    </figure>
   </body>
 </html>
