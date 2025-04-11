@@ -10,7 +10,24 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-}
+
+  /* Background Image */
+
+  /* background-image: url(./hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  background-attachment: fixed;*/
+
+  /* Shortcut */
+  background: url(./hero.jpg) no-repeat center/cover;
+  
+
+   /* Linear Gradient */
+   /* background: linear-gradient(to bottom, lightblue, darkblue);
+   background: linear-gradient(to bottom left, lightblue, darkblue); */
+
+  }
 
 .hero h1 {
   font-size: 40px;

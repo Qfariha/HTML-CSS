@@ -1,3 +1,19 @@
 body {
   font-family: Arial, sans-serif;
 }
+/* More specific so this will work */
+.container h1{ 
+  color: aqua;
+}
+/* id */
+#heading{
+  color: pink;
+}
+/* class */
+.heading{
+  color: blue;
+}
+/* Important flag */
+h1{
+  color: red !important;
+}

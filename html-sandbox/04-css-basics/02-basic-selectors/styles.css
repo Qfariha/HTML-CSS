@@ -1,0 +1,41 @@
+body{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    border: 3px solid black;
+}
+a{
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Class Selectors */
+.sporty{
+    color: red;
+}
+.casual{
+    color: blueviolet;
+}
+.formal{
+    color: brown;
+}
+
+/* ID Selector */
+#container{
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+/* Multiple Styles */
+.sporty, .casual{
+    font-size: 35px;
+}
+
+/* Descendant Styles */
+#container p{
+    background-color: antiquewhite;
+    color: black;
+}
+p{
+    color: red;
+   
+}
