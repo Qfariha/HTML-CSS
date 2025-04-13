@@ -6,5 +6,50 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f4f4f4;
+  background: #f1f1f1;
+}
+.container{
+  border: 2px solid;
+  /* margin auto centered the box */
+  margin: 100px auto;
+  width: 400px;
+  height: 350px;
+  padding: 50px;
+  background-color: #373f4d;
+  color: white;
+  text-align: center;
+  box-shadow: 4px 4px 6px rgba(0,0,0, .4);
+}
+.card h1{
+  font-size: 22px;
+}
+.card p{
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card input[type="text"]{
+  width: 100%;
+  padding: 15px 10px;
+  font-size: large;
+  background-color: #f1f1f1;
+  border: none;
+}
+.card button{
+  width: 100%;
+  padding: 15px 10px;
+  margin-top: 20px;
+  font-size: large;
+  background-color: rgb(254, 127, 80);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.card button:hover{
+  background: linear-gradient(
+  90deg,
+  rgba(232, 132, 62, 1) 21%,
+  rgba(220, 111, 69, 1) 61%
+)
 }

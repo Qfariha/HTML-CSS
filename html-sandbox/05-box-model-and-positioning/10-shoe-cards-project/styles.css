@@ -1,3 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* border box ensures width and height include content + padding + border  */
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #d9e2e8;
+}
+.card{
+  margin: 30px auto;
+  border-radius: 10px;
+  padding: 30px;
+  width: 700px;
+  background-color: white;
+}
+.card a:hover{
+  /* while hovering makes it lighter color */
+  opacity: .7;
+}
+.card-sporty h2{
+  color: red;
+  margin-bottom: 20px;
+}
+.card-sporty p{
+  margin-bottom: 30px;
+}
+.card-sporty a{
+  margin: 20px auto;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 10px;
+  background-color: red;
+  color: white;
+}
+
+.card-casual h2{
+  color: darkblue;
+  margin-bottom: 20px;
+}
+.card-casual p{
+  margin-bottom: 30px;
+}
+.card-casual a{
+  margin: 20px auto;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 10px;
+  background-color: darkblue;
+  color: white;
+}
+.card-formal h2{
+  color:  rgb(62, 62, 62);
+  margin-bottom: 20px;
+}
+.card-formal p{
+  margin-bottom: 30px;
+}
+.card-formal a{
+  margin: 20px auto;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 10px;
+  background-color: rgb(62, 62, 62);
+  color: white;
+}
+
+/* Background Images */
+.card-sporty{
+  /* color-url-norepeat-(y,x)-size */
+  background: #fff url('./images/sporty.png') no-repeat center right/200px ;
+}
+
+.card-casual{
+  /* color-url-norepeat-(y,x)-size */
+  background: #fff url('./images/casual.png') no-repeat center right/200px ;
+}
+.card-formal{
+  /* color-url-norepeat-(y,x)-size */
+  background: #fff url('./images/formal.png') no-repeat center right/200px ;
 }
