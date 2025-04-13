@@ -7,3 +7,19 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+.container{
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid black;
+}
+p{
+  /* html font-size=16px so now it is 16x2=32px*/
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+/* EM=> relative to parent element */
+ul{
+  font-size: 1.5em;
+  /* inside nested parent is outside so outside x 1.5 */
+}
