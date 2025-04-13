@@ -1,3 +1,19 @@
 body {
   font-family: Arial, sans-serif;
 }
+.flex-container{
+  background-color: #ccc;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  /* row-gap: 10px;
+  column-gap: 20px; */
+}
+.flex-item{
+  height: 200px;
+  width: 200px;
+  background-color: coral;
+  border: 1px solid black;
+}
