@@ -3,7 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* Variable is in the container scope so can not use it outside in header scope */
+:root{
+  --primary-color: lightblue;
+  --secondary-color: lightcoral;
+  --tertiary-color: lightgreen;
+  --shadow-opacity: .4;
+  --container-width: 600px;
+  --container-width-large:1100px;
+}
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -12,18 +20,32 @@ header {
   background-color: lightblue;
   padding: 20px 0;
   text-align: center;
+  margin-bottom: 10px;
 }
 
+
 .container {
-  max-width: 600px;
+  max-width: var(--container-width);
   margin: 30px auto;
   display: flex;
   gap: 20px;
 }
+.container-lg{
+  max-width: var(--container-width-large);
+}
 
 .box {
-  width: 100%;
+  flex: 1;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, var(--shadow-opacity));
+}
+.box-1{
+  background-color: var(--primary-color);
+}
+.box-2{
+  background-color: var(--secondary-color);
+}
+.box-3{
+  background-color: var(--tertiary-color);
 }
