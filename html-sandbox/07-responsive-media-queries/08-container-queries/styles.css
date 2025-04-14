@@ -6,4 +6,36 @@
 
 body {
   font-family: Arial, sans-serif;
+  font-size: 18px;
+  display: flex;
+}
+p{
+  padding: 2rem;
+}
+main{
+  container-type: inline-size;
+  container-name: main;
+  width: 100%;
+  margin: 30px auto;
+  padding: 20px;
+}
+main p{
+  background-color: lightgreen;
+}
+aside{
+  container-type: inline-size;
+  container: aside;
+  flex: 0 0 30%;
+  background-color: lightgray;
+  padding: 20px;
+}
+@container main (max-width:992px){
+  main p{
+    background-color: aqua;
+  }
+}
+@container aside(max-width:300px) {
+  aside p{
+    background-color: lightcoral;
+  }
 }
