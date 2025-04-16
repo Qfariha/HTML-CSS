@@ -10,8 +10,11 @@ body {
   font-size: 18px;
   line-height: 1.6;
   scroll-behavior: smooth;
-}
 
+}
+:root{
+  --header-transparency:.8;
+}
 ul {
   list-style: none;
 }
@@ -38,8 +41,14 @@ img {
   color: #fff;
   padding: 10px 0;
   margin-bottom: 80px;
+  /* Fixed Navbar */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-
+.header.transparent{
+  background: linear-gradient(45deg,rgba(255,0,0,var(--header-transparency)),rgba(0,0,255,var(--header-transparency)));
+}
 .header .menu ul {
   display: flex;
   justify-content: center;
