@@ -3,17 +3,46 @@ body {
 }
 
 /*  Style the first li of it's parent */
-
+ul li:first-of-type{
+  font-weight: bolder;
+}
 /*  Style the last li of it's parent */
-
+ul li:last-of-type{
+  font-weight: bolder;
+}
 /*  Style the 3rd item */
-
+ul li:nth-of-type(3){
+  background-color: aliceblue;
+}
 /*  Style the 6th item */
-
+ul li:nth-of-type(6){
+  color: blueviolet;
+  font-weight: bold;
+}
 /*  Style the even items */
-
+ul li:nth-of-type(even){
+  background-color:lightyellow;
+  font-weight: bold;
+}
 /*  Style the odd items */
-
+ul li:nth-of-type(odd){
+  background-color:lightgreen;
+  font-weight: bold;
+}
 /* nth-of-type vs nth-child */
-
+/*nth-of-type is still targetiing the 2nd p tag  */
+p:nth-of-type(2) {
+  font-weight: bold;
+  
+}
+/* nth child is targetting 2nd element inside div even tho 1st is h1, so 1st p tag(hello) is red */
+p:nth-child(2){
+  color: red;
+  
+}
 /* Using pseudo classes with pseudo elements */
+.container p:first-of-type::first-letter{
+  font-weight: bold;
+  font-size: 2rem;
+  color: blueviolet;
+}

@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,4 +29,24 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   position: relative;
+}
+h2::before{
+  content: 'Hello';
+  color: red;
+  margin-right: 15px;
+}
+label.is-required::after{
+  content: '*';
+  color: red;
+  margin-left: 2px;
+  font-size: 1.2rem;
+}
+h2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 200px;
+  background: red;
 }

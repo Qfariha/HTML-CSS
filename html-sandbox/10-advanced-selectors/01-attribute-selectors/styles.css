@@ -73,19 +73,39 @@ button:hover {
 }
 
 /* Select by type attribute */
+input[type='email']{
+  border-color: green;
+}
 
 /* Select by name attribute */
-
+input[name='name']{
+  border-color: blue;
+}
 /* Select text type and id of name */
-
+input[type='text'][id='name']{
+  background-color: #ccc;
+}
 /* Select required inputs */
-
+input[required]{
+  border-color: red;
+}
 /* Select password with a maxlength of 8 */
-
+input[type='password'][maxlength='8']{
+  background-color: aquamarine;
+}
 /* Select button with type of submit */
-
+button[type='submit']{
+  background-color: palevioletred;
+}
 /* Select only links that have a href attribute starting with # */
-
+a[href^='#']{
+  color: black;
+}
 /* Select only links that have a href attribute ending with .com */
-
+a[href$='.com']{
+  color: lightgreen;
+}
 /* Select only links that have a href attribute containing traversy */
+a[href*='traversy']{
+text-decoration: underline;
+}
