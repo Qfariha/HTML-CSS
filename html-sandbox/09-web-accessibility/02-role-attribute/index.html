@@ -7,6 +7,45 @@
     <title>HTML & CSS Sandbox</title>
   </head>
   <body>
-    <h1>HTML & CSS Sandbox - Role Attribute</h1>
+
+    <!-- Banner -->
+    <head role="banner">
+      <h1>My Website</h1>
+      <p>Welcome tp my website</p>
+    </head>
+    <main>
+      <h2>My Website</h2>
+
+    <!-- Button -->
+    </main>
+    <a href="/" role="button">Click me</a>
+    <img src="https://picsum.photos/200/300" alt="" 
+    role="button"
+    aria-label="Button to open modal"
+    tabindex="0">
+
+    <!-- Listbox & Option  -->
+    <h2>Available Fruit</h2>
+    <ul role="listbox" aria-label="Available Fruit">
+      <li role="option">Apple</li>
+      <li role="option">Grapes</li>
+      <li role="option">Oranges</li>
+      <li role="option">Cherry</li>
+    </ul>
+
+    <!-- Region -->
+    <div role="region" aria-label="FAQ section">
+      <h2>FAQ</h2>
+      <p>This is the FAQ region</p>
+    </div>
+    <div role="alert">
+      <p>Post Saved</p>
+    </div>
+
+    <script>
+      document.querySelector('img'), addEventListener('click',function(){
+          alert('Image Clicked')
+        });
+    </script>
   </body>
 </html>

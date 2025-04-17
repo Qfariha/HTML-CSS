@@ -70,7 +70,7 @@ body {
 
 .search button {
   padding: 8px 15px;
-  background-color: #4caf50;
+  background-color: #2b5429;
   color: #fff;
   border: none;
   border-radius: 0 5px 5px 0;
@@ -80,5 +80,16 @@ body {
 }
 
 .search button:hover {
-  background-color: #45a049;
+  background-color: #37803a;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }
