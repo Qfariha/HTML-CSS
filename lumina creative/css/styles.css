@@ -8,6 +8,7 @@
     --container-normal: 1100px;
     --container-wide: 1400px;
     --container-narrow: 900px;
+    --dark-color:#333;
 
 }
 body{
@@ -29,6 +30,42 @@ img{
 Utility classes are single-purpose, reusable CSS classes that apply a specific style or property. */
 .bg-primary{
     background-color: var(--primary-color);
+    color: #333;
+}
+.bg-dark{
+    background-color: var(--dark-color);
+    color: white;
+}
+.bg-dark .bg-primary{
+    padding: 0 0.3rem ;
+}
+.section-heading{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid #333;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #333;
+    color: white;
+}
+
+.visually-hidden {
+    clip: rect(0 000); 
+    clip-path: inset(50%); 
+    height: 1px; 
+    overflow: hidden;
+    position: absolute; 
+    white-space: nowrap;
+    width: 1px; 
 }
 
 /* Container */
@@ -126,10 +163,70 @@ Utility classes are single-purpose, reusable CSS classes that apply a specific s
 .footer a{
     margin: .2rem;
 }
+
+/* Services */
+.services{
+    padding: 3rem 0 4rem;
+}
+.services-flex{
+    display: flex;
+    gap: 2rem;
+}
+
+.services-item h4{
+    font-size: 1.1rem;
+    margin-bottom: .7rem;
+}
+/* Team */
+.team{
+    /* top right bottom left; */
+    padding: 3rem 0 4 rem;
+}
+.team-flex{
+    display: flex;
+    gap: 1.4rem;
+}
+.team img{
+    border-radius: 10px;
+}
+
+/* Contact */
+.contact{
+    padding: 3rem 0 4rem;
+}
+.contact p{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.form-group{
+    margin: 2rem 0;
+}
+.contact input,
+.contact textarea{
+    border: none;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    padding-bottom: 1rem;
+}
+.contact textarea{
+    height: 200px;
+}
+.contact input:focus
+.contact textarea:focus{
+    outline: 0;
+}
+.contact button{
+    width: 100%;
+}
+
 /* Media Query */
 @media(max-width:768px){
     .header.header-flex
-    .footer.footer-flex{
+    .footer.footer-flex,
+    .services.services-flex,
+    .team.team-flex{
         flex-direction: column;
         gap: 1.5rem;
     }
