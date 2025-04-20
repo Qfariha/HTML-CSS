@@ -1,8 +1,10 @@
 ## Udemy Course "Build modern responsive websites with HTML and CSS" 
 ### Project-1: Bono Landing Form
+Live URL: https://bonolandingformbyfarihafairooz.netlify.app/
 ![alt text](<bono-landing-form/Output/Screenshot 2025-04-15 030428.png>)
 
 ### Project-2 Lumina Creative Website
+Live URL: https://luminacreativebyfarihafairooz.netlify.app/
 ![alt text](<lumina creative/Output/Screenshot 2025-04-17 183313.png>) 
 ![alt text](<lumina creative/Output/Screenshot 2025-04-17 183326.png>) 
 ![alt text](<lumina creative/Output/Screenshot 2025-04-17 183341.png>)
