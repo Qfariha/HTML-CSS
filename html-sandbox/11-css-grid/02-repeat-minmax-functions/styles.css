@@ -16,5 +16,8 @@ body {
 }
 
 .item-grid {
-
+  display: grid;
+  /* grid-template-columns: repeat(#no of times to repeat, 1fr) */
+  /* grid-template-columns: repeat(3, minmax(300px, 1fr)); */
+  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px,1fr);
 }

@@ -74,13 +74,35 @@ img {
 }
 
 /* 1. Make the background color for the first paragraph in all sections lightyellow */
-
+.section p:first-of-type{
+  background-color: lightyellow;
+}
 /* 2. Alternate background colors for all lis #eee and #ddd */
+.section li:nth-of-type(even){
+  background-color:#eee;
 
+}
+.section li:nth-of-type(odd){
+  background-color:#ddd;
+}
 /* 3. Make the background #f4f4f4 and the padding 20px for all sections that have an image */
-
+.section:has(img){
+  background-color: #f4f4f4;
+  padding: 20px;
+}
 /* 4. Make the first paragraph after a ul have the background #333, text color #fff and padding of 20px  */
-
+.section ul + p {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
 /* 5. Make the color of any links that start with http:// or https:// red  */
-
+a[href^='http://'],
+a[href^='https://']{
+  color: red;
+}
 /* 6. Make the first link in the first paragraph and the second paragraph of the second section bold */
+.section:nth-last-of-type(2) p:first-of-type a:first-of-type,
+.section:nth-last-of-type(2) p:nth-last-of-type(2){
+  font-weight: bold;
+}

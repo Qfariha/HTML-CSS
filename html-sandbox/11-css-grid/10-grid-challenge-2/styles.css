@@ -11,24 +11,29 @@ body {
 .container {
   display: grid;
   min-height: 100vh;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
 }
 
 header {
   background-color: #333;
   color: #fff;
   padding: 20px;
+  grid-column: 1/ span 2;
 }
 
 nav {
   background-color: #444;
   color: #fff;
   padding: 20px;
+  grid-column: 1/ span 1;
 }
 
 .search {
   background-color: #666;
   color: #fff;
   padding: 20px;
+  grid-column: 2/ span 2;
 }
 
 main {
@@ -45,4 +50,6 @@ footer {
   background-color: #666;
   color: #fff;
   padding: 20px;
+  grid-row: 4/ span 5;
+  grid-column: 1/ span 2;
 }

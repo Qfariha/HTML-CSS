@@ -14,3 +14,28 @@ body {
   max-width: 600px;
   margin: 30px auto;
 }
+.container h1,
+.container h2,
+.container p {
+  color: red;
+}
+/* Same as previous one */
+.container :is(h1,h2,p){
+  color: blue;
+}
+a:is(:hover, :focus) {
+  background-color: pink;
+}
+/* Where has lower specificity */
+.container :where(h1, h2, p) {
+  color: green;
+}
+/* If the container has a h1 with span in it then rule is applied
+has lower specificcity than where */
+.container:has(h1 span) {
+  color: red;
+}
+/* Checking if there is an h2 right after that h1 */
+h1:has(+ h2) {
+  color: blue;
+}
