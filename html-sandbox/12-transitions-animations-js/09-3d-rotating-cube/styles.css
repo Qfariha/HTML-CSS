@@ -1,3 +1,10 @@
 body {
   font-family: Arial, sans-serif;
 }
+.container {
+  /* The perspective property in CSS gives a 3D effect to elements by affecting how far the viewer is from the z-plane (depth) */
+  perspective: 1000px;
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+}

@@ -1,0 +1,55 @@
+.container {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    animation: spin 2s linear infinite;
+  }
+.loader::before,
+.loader::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 35px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #3498db;
+    animation: bounce 2s infinite ease-in-out;
+}
+.loader::after {
+    /* moving the after from 35px to -35px */
+    left: -35px;
+    background: #e74c3c;
+}
+  @keyframes spin {
+    /* 0% -> 100% is same as from -> to
+    0%{
+        transform: rotate(0);
+        background-color: #3498db;
+    }
+    50% {
+        background-color: #e74c3c;
+    }
+    */
+    100%{
+        transform: rotate(360deg);
+        /* background-color: #3498db; */
+    }
+  }
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-30px);
+    }
+  }
