@@ -11,15 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
+    <link rel="icon" href="./images/favicon.png">
+
     <title>Welcome to tutor</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
         <div class="navbar-flex container">
+            <a href="/" aria-label="Logo Home Link">
+                <img src="images/logo.svg" alt="Tutor Logo" />
+            </a>
             
-            <img src="images/logo.svg" alt="Tutor Logo" />
-        
-          
             <div class="main-menu-items">
                 <ul class="main-menu-list">
                     <li>
@@ -42,12 +44,12 @@
                     </li>
                     <li>
                         <!-- Target is blank to open in new tab -->
-                        <a href="https://facebook.com" target="_blank">
+                        <a href="https://facebook.com" target="_blank" aria-label="Follow us on Facebook">
                         <i class="fa-brands fa-facebook"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com" target="_blank">
+                        <a href="https://twitter.com" target="_blank" aria-label="Follow us on Twitter">
                         <i class="fa-brands fa-twitter"></i>
                         </a>
                     </li>
@@ -57,11 +59,12 @@
             <!-- Mobile Menu -->
             <div class="mobile-menu">
             <!-- Hamburger button -->
-                <div class="mobile-menu-toggle">
+                <div class="mobile-menu-toggle" role="button" aria-expanded="false" aria-controls="mobile-menu-items"
+                aria-label="Open Mobile Menu" tabindex="0">
                     <i class="fas fa-bars fa-2x"></i> 
                 </div>  
                 <!-- Mobile Menu Items -->
-                <div class="mobile-menu-items">
+                <div id= "mobile-menu-items" class="mobile-menu-items">
                     <ul class="mobile-menu-list">
                         <li>
                             <a href="/">Home</a>
@@ -82,13 +85,13 @@
                             <a href="contact.html">Contact</a>
                         </li>
                         <li>
-                            <!-- Target is blank to open in new tab -->
-                            <a href="https://facebook.com" target="_blank">
+                        <!-- Target is blank to open in new tab -->
+                        <a href="https://facebook.com" target="_blank" aria-label="Follow us on Facebook">
                             <i class="fa-brands fa-facebook"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com" target="_blank">
+                            <a href="https://twitter.com" target="_blank" aria-label="Follow us on Twitter">
                             <i class="fa-brands fa-twitter"></i>
                             </a>
                         </li>
@@ -342,8 +345,233 @@
             </div>
         </div>
     </section>
+    <!-- Info -->
+    <section class="info" id="info">
+        <div class="info-container">
+            <div class="info-left"></div>
+            <div class="info-content">
+                <h2>Who Is This Course For?</h2>
+                <p>
+                    This course is designed for individuals seeking to enhance their
+                    skills and knowledge in web design, development, and digital
+                    marketing. Whether you are a seasoned web designer, a budding web
+                    developer or a marketing professional looking to expand your skill
+                    set.
+                </p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Web Designers</li>
+                    <li><i class="fas fa-check"></i> Web Developers</li>
+                    <li><i class="fas fa-check"></i> Marketing Professionals</li>
+                    <li><i class="fas fa-check"></i> Entreprenuers</li>
+                    <li><i class="fas fa-check"></i> Business Owners</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Takeaways -->
+    <section class="takeaways section" id="takeaways">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Takeaways</h2>
+                <div class="heading-border"></div>
+                <p>
+                    This section highlights some of the key insights and learnings
+                    you'll gain from the course. Take a look at what you can expect to
+                    achieve:
+                </p>
+            </div>       
+            <div class="takeaways-cards">
+                
+                <div class="card">
+                    <i class="fas fa-rocket fa-3x text-primary"></i>
+                    <p>
+                        <strong>Enhanced Skills</strong> - Develop advanced skills in web
+                        design & development
+                    </p>
+                </div>
 
+                <div class="card">
+                    <i class="fas fa-globe fa-3x text-primary"></i>
+                    <p>
+                        <strong>Global Perspective</strong> - Gain insights into industry
+                        trends and best practices
+                    </p>
+                </div>
 
+                <div class="card">
+                    <i class="fas fa-cloud fa-3x text-primary"></i>
+                    <p>
+                        <strong>Cloud Technology</strong> - Explore the latest cloud
+                        technologies and tools
+                    </p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-user fa-3x text-primary"></i>
+                    <p>
+                        <strong>Networking </strong> - Connect with fellow professionals
+                        and expand your network
+                    </p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-cog fa-3x text-primary"></i>
+                    <p>
+                        <strong>Problem-Solving</strong> - Enhance your problem-solving
+                        abilities and critical thinking skills
+                    </p>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-server fa-3x text-primary"></i>
+                    <p>
+                        <strong>Technical Proficiency</strong> - Improve your technical
+                        proficiency and stay ahead in the digital landscape.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Course Details -->
+    <section class="details section" id="details">
+        <div class="container details-flex">
+            <img src="images/details.png" alt="details" />
+            <div class="details-content">
+                <h2>Course Details</h2>
+                <div class="heading-border"></div>
+                <p>
+                    Gain insight into the course curriculum, structure, and what to
+                    expect throughout your learning journey.
+                </p>
+                <a href="#" class="btn">See Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Info -->
+    <section class="details section" id="author">
+        <div class="container details-flex">
+            <img src="images/author.png" alt="details" />
+            <div class="details-content">
+                <h2>Author Information</h2>
+                <div class="heading-border"></div>
+                <p>
+                    Learn about the author's background, expertise, and contributions to
+                    the course content.
+                </p>
+                <ul>
+                    <li>
+                        <i class="fas fa-chevron-circle-right text-primary"></i>
+                        <strong> Expertise: </strong> Lorem ipsum dolor sit amet
+                        consectetur.
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-circle-right text-primary"></i>
+                        <strong>Experience:</strong> Blandit turpis a est eget augue
+                        ornare.
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-circle-right text-primary"></i>
+                        <strong>Skills:</strong> Sed vulputate aliquet eget non velit.
+                    </li>
+                </ul>
+                <a href="#" class="btn">See Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats section" id="stats">
+        <div class="container stats-flex">
+            <img src="images/stats.png" alt="stats" />
+            <div class="stats-content">
+                <div class="stats-numbers">
+                    
+                    <div>
+                        <h3 aria-labelledby="stats-happy-users">2000+</h3>
+                        <p id="stats-happy-users">Happy Users</p>
+                    </div>
+
+                    <div>
+                        <h3 aria-labelledby="stats-issues-solved">358</h3>
+                        <p id="stats-issues-solved">Issues Solved</p>
+                    </div>
+
+                    <div>
+                        <h3 aria-labelledby="stats-good-reviews">980</h3>
+                        <p id="stats-good-reviews">Godd Reviews</p>
+                    </div>
+
+                    <div>
+                        <h3 aria-labelledby="stats-case-studies">216</h3>
+                        <p id="stats-case-studies">Case Studies</p>
+                    </div>
+                </div>
+
+                <p class="stats-text">
+                    Tutor is probably one of the best video courses on landing page
+                    making in the web industry
+                </p>
+                <a href="#" class="btn">Get The Course</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter section" id="newsletter">
+        <div class="container newsletter-flex">
+            <h2>Subscribe To Our Newsletter</h2>
+            <p>
+                Stay updated with the latest news, offers, and insights from our
+                platform. Join our newsletter community today!
+            </p>
+            <form>
+                <input type="email" name="email" id="email" placeholder="Enter your email"/>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Social -->
+    <section class="social section">
+        <div class="container">
+            <p>Follow us on social media for updates and news about our courses.</p>
+            <div class="social-icons">
+                
+                <a href="https://facebook.com" target="_blank" aria-label="Follow Us On Facebook">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                </a>
+
+                <a href="https://instagram.com" target="_blank" aria-label="Follow Us On Instagram">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank" aria-label="Follow us on Linkedin">
+                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                </a>
+
+                <a href="https://youtube.com" target="_blank" aria-label="Follow us on Youtube">
+                    <i class="fa-brands fa-youtube fa-2x"></i>
+                </a>
+
+                <a href="https://pinterest.com" target="_blank" aria-label="Follow us on Pinterest">
+                    <i class="fa-brands fa-pinterest fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-flex">
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p>&copy; 2024 - 2025 Tutor. All rights reserved</p>
+        </div>
+    </footer>
 
     <script src="./js/script.js"></script>
 </body>
