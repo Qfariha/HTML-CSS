@@ -552,6 +552,88 @@ img {
     padding: 10rem 2rem 6rem;
 }
 
+/* Pricing */
+.pricing {
+    background: var(--tertiary-color);
+    padding: 4rem 2rem 6rem;
+} 
+.pricing__title {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+} 
+.pricing__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+} 
+.pricing__card-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    border-radius: 30px;
+    margin-bottom: 2rem;
+} 
+.pricing__card-title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+} 
+.pricing__card-price {
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+} 
+.pricing__card-list {
+    text-align: left;
+    line-height: 2.5rem;
+    font-weight: 300;
+} 
+.pricing__card-item i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+  
+/* Pricing Notes */
+.pricing-notes {
+    padding: 3rem 2rem;
+    color: #9f9caf;
+    text-align: center;
+}
+
+/* Details Features */
+.details-features {
+    background: var(--tertiary-color);
+    padding: 4rem 2rem;
+}
+.details-features__title {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+} 
+.details-features__list-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 3.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 20px;
+} 
+.details-features__list-item i {
+    color: var(--primary-color);
+} 
+.details-features__list-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+
+
 /* Media Queries */
 
 @media(max-width: 992px) {
@@ -706,5 +788,19 @@ img {
     /* video */
     .modal__content iframe {
         width: 100%;
+    }
+    /* Pricing */
+    .pricing__cards {
+        flex-direction: column;
+    }
+
+    .pricing__card {
+        margin-bottom: 4.5rem;
+    }
+
+    /* Details Features */
+    .details-features__list-item {
+        flex-direction: column;
+        text-align: center;
     }
 }
