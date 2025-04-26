@@ -11,7 +11,7 @@
   --light-color: #f9fafb;
   --dark-color: #272d35;
 }
-hrml,
+html,
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
